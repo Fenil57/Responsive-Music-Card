@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flex-container {
+  margin: 1.5rem 0;
+  border-radius: 20px;
+  max-width: 28rem;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.order-info {
+  padding: 2rem;
+  text-align: center;
+}
+
+.info-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 1.25rem;
+}
+
+.info-sub-title {
+  margin-bottom: 1.2rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.pricing {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.75rem;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-info {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.music-plan {
+  margin-left: 1.25rem;
+}
+
+.music-plan h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.music-plan p {
+  color: rgba(113, 127, 166, 1);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.change a {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.change a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+
+.btn-payment {
+  display: block;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  padding: 1.25em;
+  border-radius: 0.75em;
+  cursor: pointer;
+  margin: 1.85rem 0;
+}
+
+.btn-payment:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.btn-cancel {
+  font-weight: 900;
+  color: hsl(224, 23%, 55%);
+  display: block;
+  text-decoration: none;
+}
+
+.btn-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(pattern-background-mobile.svg);
+    font-size: 0.8rem;
+  }
+
+  .flex-container {
+    max-width: 87%;
+  }
+
+  .info-title {
+    font-size: 1.4rem;
+  }
+
+  .order-info {
+    padding: 9% 7%;
+  }
+
+  .pricing {
+    padding: 0.7rem;
+  }
+
+  .pricing-info {
+    margin-left: 0.6rem;
+  }
+
+  .btn-payment,
+  .btn-cancel,
+  .change {
+    font-size: 0.8rem;
+  }
+}
